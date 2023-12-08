@@ -32,5 +32,5 @@ handsPart1 = sorted(handsPart1, key=lambda hand: hand[0])
 handsPart2 = [([calcRunk(hand[0], joker=True)] + list(map(cardToNumJoker, hand[0])), hand[1]) for hand in hands]
 handsPart2 = sorted(handsPart2, key=lambda hand: hand[0])
 
-print('Part 2: {}'.format(sum([(idx + 1) * hand[1] for idx, hand in enumerate(handsPart2)])))   # 249666369
 print('Part 1: {}'.format(sum([(idx + 1) * hand[1] for idx, hand in enumerate(handsPart1)])))   # 249204891
+print('Part 2: {}'.format(sum([(idx + 1) * hand[1] for idx, hand in enumerate(handsPart2)])))   # 249666369
